@@ -119,6 +119,76 @@ nav .nav-cta {
     margin: .7rem;
 }
 
+
+/* Code For Footer Starts */
+
+
+.main-footer {
+    margin-top: 150px;
+    background-color: black;
+    width: 100vw;
+    max-height: 300px;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .company-logo {
+    flex-basis: 50%;
+    align-self: center;
+}
+
+footer .footer-menu {
+    flex-basis: 20%;
+}
+
+footer .footer-cta {
+    flex-basis: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    color: white;
+    font-size: .8rem;
+    text-align: center;
+    margin: 0 10px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    display: block;
+    color: white;
+    font-size: .7rem;
+    padding: 8px;
+    transition: .4s;
+    margin: 2px 10px;
+
+    &:hover {
+        color: #00aaff;
+    }
+}
+
+footer .footer-copyright {
+    color: white;
+    background-color: #1d1a1a;
+    width: 100vw;
+    height: 7vh;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+footer .footer-copyright p {
+    text-align: center;
+}
+
+
+
+/* Code For Footer Ends */
+
+
 .main-btn {
     background-color: #1d1a1a;
     padding: .9rem 1.5rem;
@@ -283,11 +353,5 @@ nav .nav-cta {
     }
 
 }
-
-
-
-
-
-
 
 /* Media Queries For Responsiveness Ends */
