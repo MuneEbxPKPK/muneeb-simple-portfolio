@@ -41,7 +41,7 @@ class TemperatureChecker {
         this.icon;
     }
     async getGeocoding(getFinalData) {
-        await fetch("http://api.openweathermap.org/geo/1.0/direct?q=" + this.cityName + "&appid=" + this.#apiKey)
+        await fetch("https://api.openweathermap.org/geo/1.0/direct?q=" + this.cityName + "&appid=" + this.#apiKey)
             .then((response) => {
                 return response.json();
             }).then((data) => {
