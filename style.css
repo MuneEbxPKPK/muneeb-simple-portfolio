@@ -359,6 +359,7 @@ section a:hover {
 
 .main-learning-table table,
 .main-learning-table tr,
+.main-learning-table th,
 .main-learning-table td {
     margin: 4px;
     padding: .8rem;
