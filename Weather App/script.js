@@ -2,7 +2,7 @@
 // Main - https://api.openweathermap.org/data/2.5/weather?lat=33.6938&lon=73.0651&appid=e9db5b895bfae488958c8f7e3b8f3f5e
 
 fetch("https://api.openweathermap.org/data/2.5/weather?lat=33.6938&lon=73.0651&appid=e9db5b895bfae488958c8f7e3b8f3f5e");
-fetch("http://api.openweathermap.org/geo/1.0/direct?q=Islamabad&appid=e9db5b895bfae488958c8f7e3b8f3f5e");
+fetch("https://api.openweathermap.org/geo/1.0/direct?q=Islamabad&appid=e9db5b895bfae488958c8f7e3b8f3f5e");
 
 
 const inputElement = document.querySelector('#input-city-name');
