@@ -1,4 +1,4 @@
-The Code in the portfolio is in the simplest form.
+The Code for the portfolio is in the simplest form.
 
 -> I have been using parcel bundler and some other libraries but to host my portfolio on free hosting I have removed all of these libraries. I have connected some libraries through CDN links.
 
