@@ -300,8 +300,14 @@ header .header-cta {
     transition: .3s;
 }
 
-.social_logo:hover {
-    transform: scale(1.3);
+.insta_link:hover,
+.linkedin_link:hover,
+.github_link:hover,
+.whatsapp_link:hover,
+.reddit_link:hover,
+.upwork_link:hover
+{
+    transform: scale(1.25);
     transition: .3s;
 }
 
