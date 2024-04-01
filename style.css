@@ -300,9 +300,7 @@ header .header-cta {
     transition: .3s;
 }
 
-.insta_link:hover,
-.linkedin_link:hover,
-.upwork_link:hover {
+.social_logo:hover {
     transform: scale(1.3);
     transition: .3s;
 }
