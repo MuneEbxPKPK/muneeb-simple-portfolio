@@ -1,23 +1,27 @@
 
-
-fetch('https://api.ipify.org?format=json')
-    .then(results => results.json())
-    .then(data => {
-        let key = data.ip
-        console.log(key);
-
-       (function() {
-            // https://dashboard.emailjs.com/admin/account
-            emailjs.init({
-              publicKey: "MelJkzloYZExDjVTj",
-            });
+        (function(){
+            emailjs.init("MelJkzloYZExDjVTj");
         })();
 
-                emailjs.sendForm('service_p2for1r', 'template_98w8bve', this)
-                    .then(() => {
-                        console.log('SUCCESS!');
-                    }, (error) => {
-                        console.log('FAILED...', error);
-                    });
+        // Function to send IP to email
+        function sendIPToEmail(ip) {
+            var templateParams = {
+                user_ip: ip,
+            };
 
-    });
+            emailjs.send('service_p2for1r', 'template_nplc3ye', templateParams)
+                .then(function(response) {
+                    console.log('SUCCESS!', response.status, response.text);
+                }, function(error) {
+                    console.log('FAILED...', error);
+                });
+        }
+
+        // Get user's IP using IPIFY
+        fetch('https://api.ipify.org?format=json')
+            .then(response => response.json())
+            .then(data => {
+                console.log('User IP:', data.ip);
+                sendIPToEmail(data.ip);
+            })
+            .catch(error => console.error('Error fetching IP:', error));
